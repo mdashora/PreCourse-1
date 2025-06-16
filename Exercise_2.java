@@ -6,7 +6,7 @@ Space Complexity:
  */
 // Did this code successfully run on Leetcode : 
     // Link for associated Leetcode problem is not provided but the core is running.
-// Any problem you faced while coding this : Revisited concepts before solving.
+// Any problem you faced while coding this : No
 
 public class StackAsLinkedList { 
   
@@ -43,7 +43,7 @@ public class StackAsLinkedList {
     { 	
 	//If Stack Empty Return 0 and print "Stack Underflow"
         //Write code to pop the topmost element of stack.
-	//Also return the popped element    
+	//Also return the popped element        
     if (isEmpty()) {
         System.out.println("Stack Underflow");
         return 0;
@@ -58,6 +58,12 @@ public class StackAsLinkedList {
     public int peek() 
     { 
         //Write code to just return the topmost element without removing it.
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return 0;
+        } else {
+            return root.data;
+        }        
     } 
   
 	//Driver code
